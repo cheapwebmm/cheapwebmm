@@ -1,5 +1,14 @@
+:root {
+  --main-theme-color: #f22b0c;
+  --soft-grey-bg : rgb(219, 223, 219);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 .hvr-underline-from-left:before {
-    background: #F22B0C;
+  background: var(--main-theme-color);
 }
 
 /* .navbar {
@@ -7,37 +16,83 @@
 } */
 
 .navbar-toggler {
-    padding: 1px 5px;
-    font-size: 18px;
+  padding: 1px 5px;
+  font-size: 18px;
 }
 
 .navbar-nav a {
-    text-transform: uppercase;
-    font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .carousel-caption {
-    /* transform: translateY(-50%);
+  /* transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     bottom: 0;
     top: 50%; */
-    background: rgba(0, 0, 0, 0.322);
+  background: rgba(0, 0, 0, 0.322);
 }
 
 .carousel-caption h5 {
-    font-size: 4vw;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
 }
 
 .carousel-caption a {
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+  background: var(--main-theme-color);
+  display: inline-block;
+  padding: 8px 8px;
+  border: 2px solid white;
+}
+
+#pricing {
+  margin: 0px 0px;
+  padding: 100px 0 50px 0;
+  /* background: var(--soft-grey-bg); */
+}
+
+.title-text {
+    /* background: var(--main-theme-color); */
     color: white;
-    background: #F22B0C;
-    display: inline-block;
-    padding: 8px 8px;
-    border: 2px solid white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.bg-red {
+  background: var(--main-theme-color);
+  color: white!important;
+  line-height: 2em;
+}
+
+.pricing-title {
+  color: white!important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2em;
+}
+
+#services {
+  background: var(--main-theme-color);
+  margin: 50px 0;
+  padding-bottom: 100px;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.mysvg {
+  color: red;
 }

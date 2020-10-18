@@ -133,7 +133,32 @@ p {
   }
 }
 
+#faq {
+  background: rgb(87, 83, 83);
+}
+
+.faq-box {
+  margin-bottom: 1em;
+  background: var(--main-theme-color);
+  color: white;
+}
+
+.uk-accordion-title {
+  color: white;
+}
+
+.uk-accordion-title:hover, .uk-accordion-title:active  {
+  color: white;
+}
+
+.uk-accordion-content {
+  line-height: 2em;
+}
+
+
 footer {
   background: var(--main-theme-color);
   text-align: center;
 }
+
+

@@ -34,21 +34,19 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cheapwebmm.com">
+    <meta property="og:url" content="https://www.cheapwebmm.com/">
     <meta property="og:title" content="CWM - Cheap Website Myanmar">
     <meta property="og:description"
         content="We create the low-priced websites for your business to keep contact with your customers even your shops are closed.">
-    <meta property="og:image"
-        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="og:image" content="">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cheapwebmm.com">
+    <meta property="twitter:url" content="https://www.cheapwebmm.com/">
     <meta property="twitter:title" content="CWM - Cheap Website Myanmar">
     <meta property="twitter:description"
         content="We create the low-priced websites for your business to keep contact with your customers even your shops are closed.">
-    <meta property="twitter:image"
-        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:image" content="">
 
 
 
@@ -66,11 +64,16 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+
+    <!-- facebook-page-plugin -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0"
+        nonce="eZIe50Q1"></script>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
-        uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+        uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
 
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -85,23 +88,23 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto p-1 text-center">
-                    <li class="nav-item active p-md-3">
-                        <a class="nav-link hvr-underline-from-left" href="#">Home</a>
+                    <li class="nav-item p-md-3">
+                        <a class="nav-link hvr-underline-from-left" href="#carouselExampleIndicators" uk-scroll>Home</a>
                     </li>
                     <li class="nav-item p-md-3">
-                        <a class="nav-link hvr-underline-from-left" href="#">Pricing</a>
+                        <a class="nav-link hvr-underline-from-left" href="#pricing" uk-scroll>Pricing</a>
                     </li>
                     <li class="nav-item p-md-3">
-                        <a class="nav-link hvr-underline-from-left" href="#">Services</a>
+                        <a class="nav-link hvr-underline-from-left" href="#services" uk-scroll>Services</a>
                     </li>
                     <li class="nav-item p-md-3">
-                        <a class="nav-link hvr-underline-from-left" href="#">Portfolio</a>
+                        <a class="nav-link hvr-underline-from-left" href="#about-us" uk-scroll>About Us</a>
                     </li>
                     <li class="nav-item p-md-3">
-                        <a class="nav-link hvr-underline-from-left" href="#">FAQ</a>
+                        <a class="nav-link hvr-underline-from-left" href="#faq" uk-scroll>FAQ</a>
                     </li>
                     <li class="nav-item p-md-3">
-                        <a class="nav-link hvr-underline-from-left" href="#">Contact</a>
+                        <a class="nav-link hvr-underline-from-left" href="#contact" uk-scroll>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -199,7 +202,7 @@
 
 
     <!-- services -->
-    <div id="services">
+    <div id="services" class="">
         <h2 class="title-text">Our Services</h2>
 
         <div class="container">
@@ -240,7 +243,7 @@
     <!-- about-us -->
     <div id="about-us">
 
-        <h2 class="title-text">Why So Cheap?</h2>
+        <h2 class="title-text">About Us</h2>
 
         <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
             style="background-image: url('img/about-us/freelancers.jpg'); position: relative;">
@@ -383,16 +386,28 @@
 
         </div>
 
+    </div>
+
+
+    <!-- contact-us -->
+    <div id="contact" class="my-5 py-5 text-center">
+        <h2 class="title-text text-red py-2">Contact Us</h2>
+        <h5>You Can Contact Us Via Our Facebook Page</h5>
+
+        <div class="fb-page" data-href="https://www.facebook.com/Cheap-Website-Myanmar-109058070993105" data-tabs=""
+            data-width="1200" data-height="1000" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/Cheap-Website-Myanmar-109058070993105"
+                class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/Cheap-Website-Myanmar-109058070993105">Cheap Website Myanmar</a>
+            </blockquote>
+        </div>
+    </div>
 
     </div>
 
 
-    <!-- <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#f22b0c" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
-    </div> -->
-
+    <!-- footer -->
     <footer class="p-3">
 
         <p class="d-inline">
@@ -400,6 +415,29 @@
         </p>
 
     </footer>
+
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="109058070993105" theme_color="#F22B0C">
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
